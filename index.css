@@ -429,7 +429,7 @@ header{
 }
 
 .what_we_do{
-    padding-block: 150px;
+    padding-block: 220px;
     padding-inline: 120px;
     position: relative;
 
@@ -522,6 +522,10 @@ header{
     padding-block-start: 150px;
     padding-block-end:100px;
     padding-inline: 120px;
+
+    br{
+        display: none;
+    }
 }
 
 .video1{
@@ -640,18 +644,27 @@ header{
 }
 .component_cards{
     display: flex;
-    gap: 100px;
+    gap: 80px;
     margin-top: 40px;
 }
 
 .fly_card,.host_card{
     background: #dbe9ff;
     margin-right: 30px;
-    padding: 40px 35px 36px;
+    padding-inline:25px;
+    padding-block: 30px;
     border-radius: 10px;
     transition: .5s;
     display: inline-block;
-    
+    h1{
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 30px;
+    }
+    p{
+        margin-top: 10px;
+        font-size: large;
+    }
 }
 
 .img_line{
@@ -660,7 +673,7 @@ header{
 }
 
 .testimonal{
-    padding-inline: 120px;
+    padding-inline: 140px;
     padding-block: 80px;
     position: relative;
 }
@@ -668,6 +681,7 @@ header{
 .testi_logo{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .toptech{
@@ -708,7 +722,7 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    gap: 30px;
+    gap: 45px;
     margin-top: 50px;
 
 }
@@ -758,15 +772,15 @@ header{
 
 .case_studies{
     padding-inline:150px ;
-    padding-block: 50px;
+    padding-block: 100px;
 
     hr{
-        margin-bottom: 150px;
+        margin-bottom: 30px;
     }
 
     h1{
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         font-size: 40px;
         font-weight: 700;
     }
@@ -961,7 +975,7 @@ footer{
     background-image: url("images/it-solution-footer-bg.png");
     background-position:center ;
     color: #ffffff;
-    padding-block-start:50px;
+    padding-block-start:100px;
     padding-block-end: 20px;
     padding-inline:120px;
 }
@@ -970,6 +984,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-block: 50px;
     h2{
         margin-bottom: 30px;
     }
@@ -1127,9 +1142,9 @@ hr{
     margin: auto;
     width:85%;
     border-radius: 5px;
-    padding-inline-end: 40px;
+    padding-inline-end: 20px;
     padding-inline-start: 20px;
-    padding-block: 30px;
+    padding-block: 40px;
     position: absolute;
     top:300px;
     left:120px;
@@ -1179,6 +1194,7 @@ form{
     text-align: center;
     border: none;
     margin-top: 30px;
+    font-size: large;
 }
 
 .submit:hover,.meetnow:hover{
@@ -1226,6 +1242,7 @@ form{
     margin-block-start: 5px;
 }
 .cars{
+    font-size: large;
     width: 500px;
     height: 60px;
     margin-block-start: 30px;
@@ -1240,21 +1257,35 @@ form{
     display: flex;
     flex-direction: column;
     margin-block-start: 30px;
+    font-size: large;
+
 }
+
+
 
 .text_area{
     height: 112px;
     border: 1px solid rgba(35, 35, 35, 0.12);
     padding: 10px;
+    margin-top: 20px;
+}
+
+.bio{
+    font-size: large;
+}
+
+.company_form label{
+    font-size: large;
 }
 
 .company_type{
-    height: 35px;
-    width: 80px;
+    height: 45px;
+    width: 100px;
     background-color: #fff;
     border: 1px solid rgba(35, 35, 35, 0.12);
-    margin-block-start: 30px;
+    margin-block-start: 10px;
     font-weight: 500;
+    font-size: large;
 }
 
 .company_type:hover{
@@ -1262,7 +1293,7 @@ form{
     color: #fff;
 }
 
-.checkbox{
+.check{
     height: 13px;
     width: 13px;
     margin-top: 20px;
@@ -1271,6 +1302,20 @@ form{
     display: flex;
     align-items: center;
     margin-block-start: 30px;
+}
+.scrollup{
+    bottom: 60px;
+    color: #fff;
+    font-size: 32px;
+    height: 60px;
+    line-height: 60px;
+    right: 90px;
+    text-align: center;
+    width: 60px;
+    border-radius: 100%;
+    background: #0c5adb;
+    transition: .3s;
+    position: fixed;
 }
 
 .mt_nav{
@@ -1670,6 +1715,7 @@ form{
         width: 100%;
         margin-block-start:30px;
         background-color: #fff;
+        padding: 10px;
     }
     
     .accordion li label {
@@ -1705,12 +1751,12 @@ form{
     }
 
     
-    input[type='checkbox']:checked + label + .submenu {
+    .accordion input[type='checkbox']:checked + label + .submenu {
         max-height: 400px;
         padding: 10px;
     }
     
-    input[type='checkbox']:checked + label::after {
+    .accordion input[type='checkbox']:checked + label::after {
         content: '-';
     }
     
@@ -1727,6 +1773,20 @@ form{
     .section1,.section2{
         padding: 10px;
         padding-block:30px
+    }
+
+    .section1 form{
+        .bio{
+            min-width: 95%;
+            display: block;
+        }
+        .cars{
+            width: 90%;
+        }
+    }
+
+    .company_type,.text_area{
+        margin-top: 10px;
     }
 
     .section2{
@@ -1749,8 +1809,20 @@ form{
         left:0px;
         margin: 0px;
         width: 100%;
+
     }
 
+    .map_section1{
+        padding-block:70px;
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    .section1 .form_checkbox +input[type=radio]{
+        width: 0%;
+        display: block;
+    }
     .cars{
         width: 50vw;
         font-weight: 600;
@@ -1766,21 +1838,26 @@ form{
 
     .foot{
         flex-direction: column;
+        align-items: center;
     }
     .copyrights{
         flex-direction: column;
         gap: 10px;
     }
-    .col2,.col3,.col4{
+    .col1,.col2,.col3,.col4{
         margin-top: 20px;
+        text-align: center;
     }
 
+    .discover{
+        margin-inline: 20vw;
+    }
     .sub{
         text-align: center;
     }
 
     .inp{
-        width:90vw
+        margin-inline: 4vw;
     }
 
     .service{
@@ -1788,6 +1865,8 @@ form{
     }
     .ser_line1,.ser_line2{
         flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
     }
 
     .front,.back{
@@ -1909,8 +1988,10 @@ form{
         z-index: 0;
         margin-right: 0px;
     }
+    
     .component{
         padding: 10px;
+        padding-block: 50px;
     }
     .arrows{
         display: none;
@@ -1935,10 +2016,10 @@ form{
     }
 
     .video_img{
-        height:150px;
-        width: 80vw;
-        left: 50px;
-        top:90px
+        height: 150px;
+        width: 90vw;
+        left: 20px;
+        top: 90px;
     }
 
     .hand,.star1{
@@ -1954,6 +2035,7 @@ form{
 
     .what_we_do{
         padding: 10px;
+        padding-block: 50px;
     }
     .we_do_content{
         h1{
@@ -1965,7 +2047,7 @@ form{
     }
 
     .title{
-        margin-inline:20vw ;
+        margin-inline:28vw ;
     }
 
     .total_work{
@@ -1973,6 +2055,7 @@ form{
         align-items: center;
         justify-content: center;
         padding: 10px;
+        padding-block: 50px;
         gap: 30px;
     }
 
@@ -2021,7 +2104,7 @@ form{
     }
 
     .logo{
-        padding-inline:15vw;
+        padding-inline:25vw;
 
     }
     .heroimg{
@@ -2041,9 +2124,11 @@ form{
     }
 
     .navbar{
-        padding:10px;
-        margin-inline:6vw;
+        padding: 10px;
+        margin-inline: 0vw;
         position: static;
+        width: 100%;
+        border-radius: 0px;
     }
     .nav{
         display: none;
