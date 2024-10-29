@@ -72,7 +72,7 @@
             <img src="images\logo2.png" class="it_logo" />
           </div>
 
-          <div class="nav">
+          <div class="nav" >
             <div class="home">
               <a href="#">HOME</a>
               <ul>
@@ -147,11 +147,87 @@
       </header>
       <div class="mobile_opt">
         <h1>Toptech</h1>
-        <button class="option">
+        <button class="option" id="option_bar">
           <i class="fa-solid fa-bars-staggered fa-sm"></i>
         </button>
       </div>
+      <div class="mt_nav" id="mt">
+        <ul class="accordion">
+          <li>
+            <input type="checkbox" id="home">
+            <label class="h" for="home">Home</label>
+            <ul class="submenu">
+                <li>IT-Solutions</li>
+                <li>Cyber-Security-Demo</li>
+                <li>Hosting Service Demo</li>
+                <li>Software-Company-Demo</li>
+                <li>Mobile-App Demo</li>
+            </ul>
+        </li>
+        <hr>
+        <li>
+            <input type="checkbox" id="company">
+            <label class="h" for="company">Company</label>
+            <ul class="submenu">
+                <li>IT-Solutions</li>
+                <li>Cyber-Security-Demo</li>
+                <li>Hosting Service Demo</li>
+                <li>Software-Company-Demo</li>
+                <li>Mobile-App Demo</li>
+            </ul>
+        </li>
+        <hr>
+        <li>
+            <input type="checkbox" id="services">
+            <label class="h" for="services">Services</label>
+            <ul class="submenu">
+                <li>IT-Solutions</li>
+                <li>Cyber-Security-Demo</li>
+                <li>Hosting Service Demo</li>
+                <li>Software-Company-Demo</li>
+                <li>Mobile-App Demo</li>
+            </ul>
+        </li>
+        <hr>
+        <li>
+            <input type="checkbox" id="it-solutions">
+            <label class="h" for="it-solutions">IT Solutions</label>
+            <ul class="submenu">
+                <li>IT-Solutions</li>
+                <li>Cyber-Security-Demo</li>
+                <li>Hosting Service Demo</li>
+                <li>Software-Company-Demo</li>
+                <li>Mobile-App Demo</li>
+            </ul>
+        </li>
+        <hr>
+        <li>
+            <input type="checkbox" id="blog">
+            <label class="h" for="blog">Blog</label>
+            <ul class="submenu">
+                <li>IT-Solutions</li>
+                <li>Cyber-Security-Demo</li>
+                <li>Hosting Service Demo</li>
+                <li>Software-Company-Demo</li>
+                <li>Mobile-App Demo</li>
+            </ul>
+        </li>
+        
+            <hr>
+        <li>
+          <input type="checkbox" id="us">
+          <label class="h" for="us">Contact-Us</label>
+          <ul class="submenu">
+              <li>Phone: +1234567890</li>
+              
+          </ul>
+          <hr>
+          <button class="quote">GET A QUOTE</button>
 
+      </li>
+        </ul>
+    </div>
+    
       <div class="hero_section">
         <img src="images\count.png" class="count" />
         <img src="images\b-star.png" class="b_star" />
@@ -442,66 +518,6 @@
         </div>
       </div>
 
-      <div class="map_section1">
-        <div class="sec1">
-          <div class="contact-us">
-            <h3>Contact-Us</h3>
-          </div>
-          <h1>Let’s Contact Our Experts</h1>
-        </div>
-
-        <div class="top_star_logo">
-          <img src="images\top_star.png" />
-        </div>
-      </div>
-
-      <div class="map_section2">
-        <div class="section1">
-          <div class="color_dot">
-            <img src="images\color-dots.png">
-          </div>
-          <h3>You can Reach us anytime via
-            example@gmail.com</h3>
-
-            <form>
-             <input type="text" placeholder="First Name">
-             <input type="text" placeholder="Last Name"><br>
-             <input type="tel" placeholder="Phone">
-             <input type="email" placeholder="Email"><br>
-             <select name="Help" id="cars">
-               <option value="How Can we help you?">How Can we help you?</option>
-               <option value="Medical">Medical</option>
-               <option value="University">University</option>
-               <option value="Customer">Customer</option>
-             </select> 
-
-             <label>What’s the type of your Company?</label><br>
-             <button>Sass</button>
-             <button>Medical</button>
-             <button>University</button>
-             <button>Customer</button>
-
-             <label>Write the Message:</label>
-             <textarea  name="w3review" rows="4" cols="50">Message</textarea>
-             <input type="checkbox"><p>By Click the box & Agree Terms & Conditions</p>
-             <button class="submit">Submit Now</button>
-            </form>
-        </div>
-
-        <div class="section2">
-          <img src="images\teams-1.png">
-          <img src="images\teams-2.png">
-
-          <button class="meetnow">MEET OUR Team <i class="fa-solid fa-arrow-right fa-sm"></i></button>
-
-          <p>Monotonectally synergize grants to business visualize strategict infomediaries parallel task technically convergence maintaince local business technology done</p>
-          <hr>
-          <h2>Call Us :  +123 (4567) 890</h2>
-
-          
-        </div>
-      </div>
-
       <div class="component">
         <div class="img_line">
           <img src="images\line.png" class="lines_img" />
@@ -631,6 +647,74 @@
         </div>
       </div>
 
+      <div class="map_section1">
+        <div class="sec1">
+          <div class="contact-us">
+            <h3>Contact-Us</h3>
+          </div>
+          <h1>Let’s Contact Our Experts</h1>
+        </div>
+
+        <div class="top_star_logo">
+          <img src="images\top_star.png" />
+        </div>
+        <div class="map_section2">
+          <div class="section1">
+            <div class="color_dot">
+              <img src="images\color-dots.png">
+            </div>
+            <h3>You can Reach us anytime via
+             <span> example@gmail.com</span></h3>
+  
+              <form>
+               <input type="text" placeholder="First Name">
+               <input type="text" placeholder="Last Name"><br>
+               <input type="tel" placeholder="Phone">
+               <input type="email" placeholder="Email"><br>
+               <select name="Help" class="cars">
+                 <option value="How Can we help you?">How Can we help you?</option>
+                 <option value="Medical">Medical</option>
+                 <option value="University">University</option>
+                 <option value="Customer">Customer</option>
+               </select> 
+  
+               <div class="company_form">
+               <label>What’s the type of your Company?</label><br>
+               <button class="company_type">Sass</button>
+               <button class="company_type">Medical</button>
+               <button class="company_type">University</button>
+               <button class="company_type">Customer</button>
+                </div>
+  
+                <div class="msg_form">
+               <label>Write the Message:</label>
+               <textarea  name="w3review" class="text_area">Message</textarea>
+               <div class="form_checkbox">
+               <input type="checkbox" class="checkbox"><p>By Click the box & Agree Terms & Conditions</p>
+               </div>
+               </div>
+               <button class="submit">Submit Now</button>
+              </form>
+          </div>
+  
+          <div class="section2">
+            <img src="images\teams-1.png">
+            <img src="images\teams-2.png">
+
+            <div class="meet_now">
+            <button class="meetnow">MEET OUR Team <i class="fa-solid fa-arrow-right fa-sm"></i></button>
+            </div>
+  
+            <p>Monotonectally synergize grants to business visualize strategict <br>infomediaries parallel task technically convergence maintaince<br> local business technology done</p>
+            <hr>
+            <h2>Call Us :  +123 (4567) 890</h2>
+            <hr>
+  
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2149724484448!2d76.99622987480863!3d11.022491489141656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8596add181479%3A0x2ce3436db9ec108a!2sRigelSoft%20Technologies%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1730137098374!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="g_map"></iframe>
+          </div>
+        </div>
+      </div>
+
       <div class="partners">
         <div class="part_title">
           <div class="title3">
@@ -641,7 +725,7 @@
             People Worldwide
           </h1>
         </div>
-
+    
         <div class="logo_partners">
           <div class="logo_part1">
             <div class="img1">
@@ -651,7 +735,7 @@
               <img src="images\brand2.png" />
             </div>
           </div>
-
+    
           <div class="logo_part2">
             <div class="img3">
               <img src="images\brand3.png" />
@@ -660,7 +744,7 @@
               <img src="images\breand4.png" />
             </div>
           </div>
-
+    
           <div class="logo_part3">
             <div class="img5">
               <img src="images\breand5.png" />
@@ -672,7 +756,7 @@
         </div>
       </div>
      
-
+    
       <footer>
         <div class="foot">
           <div class="col1">
@@ -683,14 +767,14 @@
               task state of the art infrastructures<br />
               digital agency in north
             </p>
-
+    
             <button class="discover">
               Discover More<span
                 ><i class="fa-solid fa-arrow-right fa-xs"></i
               ></span>
             </button>
           </div>
-
+    
           <div class="col2">
             <h2>Company</h2>
             <ul>
@@ -716,7 +800,7 @@
               </li>
             </ul>
           </div>
-
+    
           <div class="col3">
             <h2>Our Services</h2>
             <ul>
@@ -742,7 +826,7 @@
               </li>
             </ul>
           </div>
-
+    
           <div class="col4">
             <h2>Newsletter</h2>
             <p>Subscribe our Latest Newsletter</p>
@@ -776,6 +860,9 @@
           </div>
         </div>
       </footer>
+
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
