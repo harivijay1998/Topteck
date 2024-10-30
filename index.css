@@ -1438,6 +1438,10 @@ form{
         align-items: center;
     }
 
+    .level{
+        position: absolute;
+    }
+
     .logo_part1,.logo_part2,.logo_part3{
         gap: 10px;
         justify-content: center;
